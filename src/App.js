@@ -1,17 +1,15 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { AuthContextProvider } from "./context/Auth";
 import Navegacion from "./routes";
-import { Header } from "./components/common/Header";
+import { Inicio } from "./pages/Inicio";
 
 function App() {
   return (
-    <div className="App">
+    <AuthContextProvider>
       <Navegacion />
-      <Header />
-      <main>
-        <sidebar></sidebar>
-      </main>
-      <footer></footer>
-    </div>
+      <Inicio />
+    </AuthContextProvider>
   );
 }
 
