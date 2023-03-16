@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthContextProvider } from "./context/Auth";
 import Navegacion from "./routes";
-import { Inicio } from "./pages/Inicio";
+import Inicio from "./pages/Inicio/Inicio";
 
 function App() {
   return (

@@ -1,15 +1,14 @@
 import React from "react";
-import "./header.css";
 import { ListGroup } from "react-bootstrap";
 import { Link } from "wouter";
 
 export function Header() {
   return (
-    <header className="p-2 d-flex justify-content-between">
+    <header className="p-2 d-flex justify-content-between border border-bottom">
       <div className="">
         <Link to="/prueba">Prueba</Link>
       </div>
-      <ListGroup className="list-group-flush">
+      <ListGroup className="list-group-horizontal">
         <ListGroup.Item>
           <Link to="/" className="text-decoration-none text-dark">
             Inicio

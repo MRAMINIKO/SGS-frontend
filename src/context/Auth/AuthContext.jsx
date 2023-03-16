@@ -22,7 +22,7 @@ export function AuthContextProvider({ children }) {
       mail: "ejemplo@gmail.com",
       usuario: "mraminiko",
       contrasenia: "1234",
-      isAuth: true,
+      isAuth: false,
       tipoUsuario: 1,
     });
   }, []);
