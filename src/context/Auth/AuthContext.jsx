@@ -22,10 +22,10 @@ export function AuthContextProvider({ children }) {
       mail: "ejemplo@gmail.com",
       usuario: "mraminiko",
       contrasenia: "1234",
-      isAuth: false,
+      isAuth: true,
       tipoUsuario: 1,
     });
   }, []);
 
-  return <AuthContext.Provider value={{ usuario }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={usuario}>{children}</AuthContext.Provider>;
 }

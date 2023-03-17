@@ -1,12 +1,16 @@
+import { useContext } from "react";
 import { Switch, Route, Router } from "wouter";
 import { Logged } from "../pages/Logged";
 import { Login } from "../pages/Login";
+import { AuthContext } from "../context/Auth/AuthContext";
 
 export default function Navegacion() {
+  const { isAuth } = useContext(AuthContext);
+
   return (
     <Router>
       <Switch>
-        <Route path="/" />
+        <Route path="/" component={isAuth ? Logged : Login} />
         <Route path="/inscripcion" />
         <Route path="/miPerfil/:id" />
         <Route path="/login" component={Login} />

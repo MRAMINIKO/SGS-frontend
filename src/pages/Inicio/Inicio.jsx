@@ -4,7 +4,7 @@ import { Logged } from "../Logged";
 import { Login } from "../Login";
 
 export default function Inicio() {
-  const { usuario } = useContext(AuthContext);
+  const { isAuth } = useContext(AuthContext);
 
-  return usuario.isAuth ? <Logged /> : <Login />;
+  return isAuth ? <Logged /> : <Login />;
 }
