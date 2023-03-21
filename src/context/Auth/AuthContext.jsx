@@ -1,15 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const AuthContext = createContext({
-  dni: -1,
-  nombre: "",
-  apellido: "",
-  mail: "",
-  usuario: "",
-  contrasenia: "",
-  isAuth: false,
-  tipoUsuario: 1,
-});
+export const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
   const [usuario, setUsuario] = useState({});
@@ -22,10 +13,18 @@ export function AuthContextProvider({ children }) {
       mail: "ejemplo@gmail.com",
       usuario: "mraminiko",
       contrasenia: "1234",
-      isAuth: true,
+      isAuth: false,
       tipoUsuario: 1,
     });
   }, []);
 
-  return <AuthContext.Provider value={usuario}>{children}</AuthContext.Provider>;
+  const login = () => {
+    setUsuario({ ...usuario, isAuth: true });
+  };
+
+  const loguot = () => {
+    setUsuario({ ...usuario, isAuth: false });
+  };
+
+  return <AuthContext.Provider value={{ usuario, login, loguot }}>{children}</AuthContext.Provider>;
 }

@@ -1,24 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useLocation } from "wouter";
-import { LoginForm } from "../../components/common/LoginForm";
-import { RegisterForm } from "../../components/common/RegisterForm";
+import LoginForm from "components/LoginForm";
+import RegisterForm from "components/RegisterForm";
+import { AuthContext } from "context/Auth";
 
-export function Login() {
+export default function Login() {
   const [login, setLogin] = useState(true);
-  const [location, navigate] = useLocation();
+  const [, navigate] = useLocation();
+
+  const contexto = useContext(AuthContext);
 
   function handleSubmit() {
     //sacar a hook
     //const form = document.querySelector(login ? "#form-login" : "#form-register");
 
-    console.log("Ubicación:", location);
-    navigate("/Logged");
-  }
+    contexto.login();
 
-  function handleChangeLogin() {
-    //sacar a hook
-    setLogin(!login);
+    navigate("/Logged");
   }
 
   return (
@@ -34,7 +33,7 @@ export function Login() {
             <Button onClick={handleSubmit}>{login ? "Iniciar sesión" : "Crear cuenta"}</Button>
             <p className="mt-3">
               {login ? "No eres parte de la seju?" : "Ya eres parte de la seju?"}
-              <button className="border-0 bg-white" onClick={handleChangeLogin}>
+              <button className="border-0 bg-white" onClick={() => setLogin(!login)}>
                 {login ? "Forma parte!" : "Iniciá sesión!"}
               </button>
             </p>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-export function RegisterForm() {
+export default function RegisterForm() {
   return (
     <Form id="form-register">
       <Form.Group className="row">

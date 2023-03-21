@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { AuthContext } from "../../context/Auth";
-import { Logged } from "../Logged";
-import { Login } from "../Login";
+import { AuthContext } from "context/Auth";
+import Logged from "pages/Logged";
+import Login from "pages/Login";
 
 export default function Inicio() {
   const { isAuth } = useContext(AuthContext);

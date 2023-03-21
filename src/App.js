@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { AuthContextProvider } from "./context/Auth";
+import { AuthContextProvider } from "context/Auth";
 import Navegacion from "./routes";
 
 function App() {

@@ -1,7 +1,7 @@
 import React from "react";
-import { Header } from "../../components/common/Header";
+import Header from "components/Header";
 
-export function Logged() {
+export default function Logged() {
   return (
     <section className="vh-100">
       <Header />

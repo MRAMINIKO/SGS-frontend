@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-export function LoginForm() {
+export default function LoginForm() {
   return (
     <Form id="form-login">
       <Form.Label htmlFor="email">
