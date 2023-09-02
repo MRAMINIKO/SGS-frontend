@@ -1,33 +1,23 @@
-"use client"
-import React from 'react'
-import { Carousel } from 'react-bootstrap';
+"use client";
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import { ImageContainer } from "../ImageContainer/ImageContainer";
+import image1 from "@public/img/image 3.png";
+import image2 from "@public/img/image 3-1.png";
+import image3 from "@public/img/image 3-2.png";
 
 export const CustomCarousel = () => {
-    return (
-        <Carousel indicators={false} controls={false}>
-            <Carousel.Item>
-                a
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                a
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                a
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
-    )
-}
+  return (
+    <Carousel indicators={false} controls={false} interval={null}>
+      <Carousel.Item>
+        <ImageContainer src={image1} title="Peregrinación juvenil a Luján" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={image2} title="Peregrinación juvenil a Luján" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={image3} title="Peregrinación juvenil a Luján" />
+      </Carousel.Item>
+    </Carousel>
+  );
+};
