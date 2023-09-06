@@ -3,6 +3,7 @@ import React from "react";
 import ilustration from "@public/img/portada.svg";
 import { CustomCarousel } from "../CustomCarousel/CustomCarousel";
 import styles from "./main.module.css";
+import { News } from "../News/News";
 
 export const MainPage = () => {
   return (
@@ -23,6 +24,10 @@ export const MainPage = () => {
         <CustomCarousel />
         {/* <ImageContainer src={image1} title="Peregrinación juvenil a Luján" /> */}
       </div>
+			<section className="d-flex flex-column align-items-center container">
+				<h4 className="fw-bold">Últimas novedades</h4>
+				<News/>
+			</section>
     </main>
   );
 };
