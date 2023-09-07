@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header/Header";
 import "bootstrap/dist/css/bootstrap.css";
 import "./global.css";
+import { Footer } from "@/components/Footer/Footer";
 
 export const metadata = {
 	title: "Next.js",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
 			<body>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
