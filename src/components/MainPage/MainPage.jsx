@@ -22,12 +22,11 @@ export const MainPage = () => {
       <div className={styles.carouselContainer}>
         <h4 className="text-center text-white">Nuestros anteriores encuentros</h4>
         <CustomCarousel />
-        {/* <ImageContainer src={image1} title="Peregrinación juvenil a Luján" /> */}
       </div>
-			<section className="d-flex flex-column align-items-center container">
-				<h4 className="fw-bold">Últimas novedades</h4>
-				<News/>
-			</section>
+      <section className="d-flex flex-column align-items-center container">
+        <h4 className="fw-bold mb-4">Últimas novedades</h4>
+        <News />
+      </section>
     </main>
   );
 };
