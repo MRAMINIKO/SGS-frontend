@@ -6,11 +6,11 @@ import newImage from "@public/asset/news.svg";
 
 export const News = () => {
   return (
-    <Card>
+    <Card className="w-75 container">
       <Card.Body className="d-flex flex-column align-items-center justify-content-between">
         <Image src={newImage} />
         <Card.Title>Noticia #1</Card.Title>
-        <div className="w-25 bg-danger" style={{ height: "0.3rem" }}></div>
+        <div className="w-25 bg-danger my-4" style={{ height: "0.3rem" }}></div>
         <Card.Text className="text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           dolor massa, pulvinar at lacus quis, porta ultrices risus.
