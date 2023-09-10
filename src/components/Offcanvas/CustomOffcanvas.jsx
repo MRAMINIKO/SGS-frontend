@@ -6,12 +6,19 @@ import logo from "@public/img/logo.svg";
 import Image from "next/image";
 import { CustomAccordion } from "../CustomAccordion/CustomAccordion";
 import { options } from "@/mocks/optionsAccordion.js";
+import { useRouter } from "next/navigation";
 
 export const CustomOffcanvas = () => {
   const [show, setShow] = useState(false);
+  const router = useRouter();
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
+
+  const handleNavigateHome = () => {
+    handleClose();
+    router.replace("/");
+  };
 
   return (
     <>
@@ -21,13 +28,16 @@ export const CustomOffcanvas = () => {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header className="justify-content-between" closeButton>
-          <a href="/">
+          <Button onClick={handleNavigateHome} variant="">
             <Image src={logo} />
-          </a>
-          {/* <Image src={close} /> */}
+          </Button>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <CustomAccordion items={options} hasFlush />
+          <CustomAccordion
+            items={options}
+            hasFlush
+            closeOffcanvas={handleClose}
+          />
         </Offcanvas.Body>
       </Offcanvas>
     </>

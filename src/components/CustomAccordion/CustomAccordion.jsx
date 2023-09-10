@@ -1,7 +1,20 @@
+"use client";
 import React from "react";
-import { Accordion } from "react-bootstrap";
+import { Accordion, Button } from "react-bootstrap";
+import { useRouter } from "next/navigation";
 
-export const CustomAccordion = ({ items, hasFlush = false }) => {
+export const CustomAccordion = ({
+  items,
+  hasFlush = false,
+  closeOffcanvas = null,
+}) => {
+  const router = useRouter();
+
+  const handleNavigate = (destination) => {
+    closeOffcanvas();
+    router.push(`/departments/${destination}`);
+  };
+
   return (
     <Accordion flush={hasFlush}>
       {items
@@ -9,17 +22,16 @@ export const CustomAccordion = ({ items, hasFlush = false }) => {
         ?.map(({ id, name, content }) => (
           <Accordion.Item key={id} eventKey={id}>
             <Accordion.Header>{name}</Accordion.Header>
-            <Accordion.Body>
-              <div className="d-flex flex-column">
-                {content?.map(({ department, href }) => (
-                  <a
-                    className="text-decoration-none text-dark my-1"
-                    href={"/departments/" + href}
-                  >
-                    {department}
-                  </a>
-                ))}
-              </div>
+            <Accordion.Body className="d-flex flex-column">
+              {content?.map(({ department, href }) => (
+                <Button
+                  variant=""
+                  className="text-start my-1 px-0"
+                  onClick={() => handleNavigate(href)}
+                >
+                  {department}
+                </Button>
+              ))}
             </Accordion.Body>
           </Accordion.Item>
         ))}
