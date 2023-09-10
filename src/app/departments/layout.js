@@ -1,10 +1,9 @@
 import React from "react";
 
-export default function Layout({ children, departmentName }) {
+export default function DepartmentsLayout({ children }) {
   return (
-    <section>
-      {departmentName}
+    <main className="container text-center">
       {children}
-    </section>
+    </main>
   );
 }

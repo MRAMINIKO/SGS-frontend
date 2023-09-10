@@ -1,10 +1,6 @@
-import React from 'react'
-import Layout from "../layout";
+import React from "react";
+
 
 export default function page() {
-  return (
-    <Layout departmentName="Comunicaciones">
-      <div>page</div>
-    </Layout>
-  )
+  return <div>page</div>;
 }
