@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ilustration from "@public/img/portada.svg";
+import ilustration from "@public/images/portada.svg";
 import { CustomCarousel } from "../CustomCarousel/CustomCarousel";
 import styles from "./main.module.css";
 import { News } from "../News/News";

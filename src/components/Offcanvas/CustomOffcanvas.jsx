@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button, Offcanvas } from "react-bootstrap";
 import menu from "@public/asset/menu.svg";
-import logo from "@public/img/logo.svg";
+import logo from "@public/images/logo.svg";
 import Image from "next/image";
 import { CustomAccordion } from "../CustomAccordion/CustomAccordion";
 import { options } from "@/mocks/optionsAccordion.js";
