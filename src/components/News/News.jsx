@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Card } from "react-bootstrap";
-import newImage from "@public/asset/news.svg";
+import newImage from "@public/assets/news.svg";
 
 export const News = () => {
   return (

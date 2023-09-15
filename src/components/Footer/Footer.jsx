@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from "@public/images/logo-blanco.svg"
+import logo from "@public/assets/logo-blanco.svg"
 import styles from "./footer.module.css"
 
 export const Footer = () => {

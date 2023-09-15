@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Button, Offcanvas } from "react-bootstrap";
-import menu from "@public/asset/menu.svg";
-import logo from "@public/images/logo.svg";
+import menu from "@public/assets/menu.svg";
+import logo from "@public/assets/logo.svg";
 import Image from "next/image";
 import { CustomAccordion } from "../CustomAccordion/CustomAccordion";
 import { options } from "@/mocks/optionsAccordion.js";
@@ -29,7 +29,7 @@ export const CustomOffcanvas = () => {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header className="justify-content-between" closeButton>
           <Button onClick={handleNavigateHome} variant="">
-            <Image src={logo} />
+            <Image src={logo}  width={50}/>
           </Button>
         </Offcanvas.Header>
         <Offcanvas.Body>

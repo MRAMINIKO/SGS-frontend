@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@public/images/logo.svg";
+import logo from "@public/assets/logo.svg";
 import { CustomOffcanvas } from "../Offcanvas/CustomOffcanvas";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export const Header = () => {
         href="/"
         className="text-decoration-none text-dark d-flex align-items-center"
       >
-        <Image src={logo} className="me-3" />
+        <Image src={logo} className="me-3" width={50} />
         <h4 className="fw-bold">SeJu</h4>
       </Link>
       <CustomOffcanvas />
