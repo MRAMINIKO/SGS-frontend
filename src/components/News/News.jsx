@@ -16,7 +16,7 @@ export const News = () => {
           dolor massa, pulvinar at lacus quis, porta ultrices risus.
         </Card.Text>
         <Card.Link
-          className="border border-info border-2 rounded text-decoration-none px-2 py-1"
+          className="border border-info border-2 rounded text-decoration-none px-2 py-1 text-info"
           href="#"
         >
           Más información &gt;
