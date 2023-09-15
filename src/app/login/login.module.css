@@ -1,0 +1,26 @@
+.form {
+  padding: 0.625rem 1rem;
+}
+
+.form div {
+  margin: 1rem 0;
+}
+
+.line {
+  height: 0.08rem;
+  width: 4rem;
+  background: #6b6b6b;
+  margin: 0 1rem;
+}
+
+.button {
+  margin: 0.5rem 0;
+  width: 16rem;
+  text-align: start;
+}
+
+.question {
+  margin-top: 0.5rem;
+  color: #6b6b6b;
+  font-weight: 300;
+}
