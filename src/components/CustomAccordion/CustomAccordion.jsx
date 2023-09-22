@@ -25,6 +25,7 @@ export const CustomAccordion = ({
             <Accordion.Body className="d-flex flex-column">
               {content?.map(({ department, href }) => (
                 <Button
+                  key={id}
                   variant=""
                   className="text-start my-1 px-0"
                   onClick={() => handleNavigate(href)}
