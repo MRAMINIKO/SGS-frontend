@@ -1,0 +1,8 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    background-color: #977561;
+    margin-bottom: 3rem;
+}

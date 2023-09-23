@@ -13,10 +13,10 @@ export const CustomCarousel = () => {
         <ImageContainer src={image1} title="Peregrinación juvenil a Luján" />
       </Carousel.Item>
       <Carousel.Item>
-        <ImageContainer src={image2} title="Peregrinación juvenil a Luján" />
+        <ImageContainer src={image2} title="Jornada de la niñez" />
       </Carousel.Item>
       <Carousel.Item>
-        <ImageContainer src={image3} title="Peregrinación juvenil a Luján" />
+        <ImageContainer src={image3} title="Semana de la juventud" />
       </Carousel.Item>
     </Carousel>
   );

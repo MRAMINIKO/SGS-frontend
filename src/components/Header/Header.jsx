@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="d-flex align-items-center justify-content-between sticky-top mb-5 px-2 py-3 text-bg-light">
+    <header className="d-flex align-items-center justify-content-between sticky-top mb-5 mb-md-0 px-2 py-3 text-bg-light">
       <Link
         href="/"
         className="text-decoration-none text-dark d-flex align-items-center"
