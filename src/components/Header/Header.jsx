@@ -11,7 +11,7 @@ export const Header = () => {
         href="/"
         className="text-decoration-none text-dark d-flex align-items-center"
       >
-        <Image src={logo} className="me-3" width={50} />
+        <Image src={logo} className="me-3" width={50} alt="SEJu" />
         <h4 className="fw-bold">SeJu</h4>
       </Link>
       <CustomOffcanvas />

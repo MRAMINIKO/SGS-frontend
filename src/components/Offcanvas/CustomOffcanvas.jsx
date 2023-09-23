@@ -23,13 +23,13 @@ export const CustomOffcanvas = () => {
   return (
     <>
       <Button variant="" onClick={handleShow}>
-        <Image src={menu} />
+        <Image src={menu} alt="" />
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header className="justify-content-between" closeButton>
           <Button onClick={handleNavigateHome} variant="">
-            <Image src={logo}  width={50}/>
+            <Image src={logo} width={50} alt="SEJU" />
           </Button>
         </Offcanvas.Header>
         <Offcanvas.Body>

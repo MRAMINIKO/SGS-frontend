@@ -8,7 +8,7 @@ export const News = () => {
   return (
     <Card className="w-75 container">
       <Card.Body className="d-flex flex-column align-items-center justify-content-between">
-        <Image src={newImage} />
+        <Image src={newImage} alt="" />
         <Card.Title>Noticia #1</Card.Title>
         <div className="w-25 bg-danger my-4" style={{ height: "0.3rem" }}></div>
         <Card.Text className="text-center">

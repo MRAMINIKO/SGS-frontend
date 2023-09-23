@@ -16,11 +16,11 @@ export const AnotherLogin = () => {
       </div>
       <div className="d-flex flex-column align-items-center">
         <Button variant="outline-secondary" className={styles.button}>
-          <Image src={facebook} className="me-2" />
+          <Image src={facebook} className="me-2" alt="facebook" />
           Continuar con Facebook
         </Button>
         <Button variant="outline-secondary" className={styles.button}>
-          <Image src={google} className="me-2" />
+          <Image src={google} className="me-2" alt="google" />
           Continuar con Google
         </Button>
         <label className={styles.question}>¿No tenés una cuenta?</label>

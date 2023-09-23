@@ -7,7 +7,7 @@ export default function LogisticaPage() {
   return (
     <section>
       <h5 className={styles.title}>Logística</h5>
-      <Image src={logisticaIlustration} width={300} />
+      <Image src={logisticaIlustration} width={300} alt="logistic - logistic illustration" />
       <p className={styles.paragraph}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
