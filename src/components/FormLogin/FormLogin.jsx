@@ -17,6 +17,7 @@ export const FormLogin = () => {
             type="email"
             className="bg-transparent border-2"
             placeholder="Usuario"
+            autoComplete="Username"
           />
         </Form.Group>
         <InputGroup>
@@ -24,6 +25,7 @@ export const FormLogin = () => {
             type={isVisible ? "text" : "password"}
             className="bg-transparent border-2"
             placeholder="Contraseña"
+            autoComplete="current-password"
           />
           <Button variant="secondary" onClick={() => setIsVisible(!isVisible)}>
             <FontAwesomeIcon icon={isVisible ? faEyeSlash : faEye} />
