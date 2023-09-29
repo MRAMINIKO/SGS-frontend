@@ -1,0 +1,11 @@
+.title {
+  color: #bc72a7;
+  font-weight: 700;
+}
+
+.paragraph {
+  text-align: center;
+  margin: 2.2rem 0 5rem 0;
+  font-size: 0.625rem;
+  color: var(--second-text-color, #737373);
+}

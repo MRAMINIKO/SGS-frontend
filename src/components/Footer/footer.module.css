@@ -1,0 +1,10 @@
+.container_info_adicional {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.container_info_adicional > p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: lighter;
+}
