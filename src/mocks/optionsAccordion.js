@@ -1,5 +1,19 @@
 export const options = [
 	{
+		id: 2,
+		name: "Quienes somos",
+		active: 0,
+		content: [],
+		href: "quienes_somos", 
+	},
+	{
+		id: 3,
+		name: "Dónde estamos",
+		active: 0,
+		content: [],
+		href: "donde_estamos", 
+	},
+	{
 		id: 1,
 		name: "Departamentos",
 		active: 1,
@@ -35,33 +49,24 @@ export const options = [
 		],
 	},
 	{
-		id: 2,
-		name: "Quienes somos",
-		active: 0,
-		content: [],
-	},
-	{
-		id: 3,
-		name: "Dónde estamos",
-		active: 0,
-		content: [],
-	},
-	{
 		id: 4,
 		name: "Contactos",
 		active: 0,
 		content: [],
+		href: "contactos", 
 	},
-	{
+	/**{
 		id: 5,
 		name: "Registros",
 		active: 0,
 		content: [],
+		href: "registros", 
 	},
 	{
 		id: 6,
 		name: "Cronogramas",
 		active: 0,
 		content: [],
-	},
+		href: "cronogramas", 
+	},*/
 ];

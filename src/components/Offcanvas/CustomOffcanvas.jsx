@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { Button, Offcanvas } from "react-bootstrap";
-import menu from "@public/assets/menu.svg";
-import logo from "@public/assets/logo.svg";
-import Image from "next/image";
-import { CustomAccordion } from "../CustomAccordion/CustomAccordion";
 import { options } from "@/mocks/optionsAccordion.js";
+import logo from "@public/assets/logo.svg";
+import menu from "@public/assets/menu.svg";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { Button, Offcanvas } from "react-bootstrap";
+import { CustomAccordion } from "../CustomAccordion/CustomAccordion";
 
 export const CustomOffcanvas = () => {
   const [show, setShow] = useState(false);
